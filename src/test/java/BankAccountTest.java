@@ -78,5 +78,19 @@ public class BankAccountTest {
         assertEquals(590.00, balance);
     }
 
+    @Test
+    void testInitialBalanceIsCorrect() {
+        BankAccount acc = new BankAccount("Eve", 250.00);
+        assertEquals(250.00, acc.getBalance());
+    }
+
+    @Test
+    void testAccountHolderNameIsStored() {
+        BankAccount acc = new BankAccount("Frank", 100.00);
+        assertEquals("Frank", acc.getOwner());
+    }
+
+
+
 
 }
