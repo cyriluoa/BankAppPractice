@@ -90,6 +90,11 @@ public class BankAccountTest {
         assertEquals("Frank", acc.getOwner());
     }
 
+    @Test
+    void testFalsePositive(){
+        assertEquals(2,2);
+    }
+
 
 
 
